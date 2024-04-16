@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+        <div class="headerBlock">
+            <div class="logo"><img src="./images/school.svg" alt=""></div>
+            <h1>Конкурс комп'ютерної графіки</h1>
+            <div class="btnLogin" data-modal><img src="./images/user.svg" alt=""></div>
+        </div>
+        <nav>
+
+        </nav>
+    </header>    
+    <div class="timerHead">
+        <h2>До закінчення конкурсу  залишилось:</h2>
+    </div>
+    <div class="timer">
+        <div class="timerBlock">
+            <span id = "days">
+                
+            </span>
+            днів
+        </div>
+        <div class="timerBlock">
+            <span id = "hours">
+                
+            </span>
+            годин
+        </div>
+        <div class="timerBlock">
+            <span id = "minutes">
+                
+            </span>
+            хвилин
+        </div>
+        <div class="timerBlock">
+            <span id = "secondes">
+                
+            </span>
+            секунд
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modalDialog">
+            <div class = "btnCloseModal" data-close>x</div>
+            <h3>Вхід</h3>
+            <span>
+                Логін                
+            </span>
+            <input type="text" value="">
+            <span>
+                Пароль                
+            </span>
+            <input type="password" value="">
+            <button class = "btnLoginModal">Увійти</button>
+        </div>
+    </div>
+
+    <!-- Choice contest -->
+    <div class="choiceContextBlock">
+        
+    </div>
+
+
+    <script src="./js/timer.js"></script>
+</body>
+</html>
