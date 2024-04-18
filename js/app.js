@@ -28,6 +28,26 @@ document.addEventListener('keydown',(e) => {
     }
 })
 
+const forms = document.querySelectorAll('form');
+function postData(form){
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const request = new XMLHttpRequest();
+        request.open('POST', 'server.php');
+        
+        request.setRequestHeader('Content-type', 'multipart/form-data')
+        const formData = new FormData(form);
+       
+        request.send(formData);
+
+
+
+
+
+    })
+}
+
 // TIMER
 function getTimer(endTimer){
     let days, hours, minutes, secondes;
@@ -83,7 +103,7 @@ function setClock (selector, endTime){
 
 setClock('.timer', start)
 
-// Cards with tasks
+// Cards with nominations
 
 class NominationCard {
     constructor(src, alt, title, description,  parentSelector) {
@@ -109,10 +129,18 @@ class NominationCard {
 };
 
 new NominationCard(
-    "./images/3D.jpg",
-    "3D",
-    "Тривимірна графіка",
-    "Створюй чарівні світи з редактором тривимірної графіки",
+    "./images/rastr.jpg",
+    "Растрова графіка",
+    "Растрова графіка",
+    "Передай реалізм і чарівність життя за допомогою растрової графіки",
+    '.choiceContextBlock'
+).render();
+
+new NominationCard(
+    "./images/vector.jpg",
+    "Векторна графіка",
+    "Векторна графіка",
+    "Намалюй яскраві ілюстрації, схеми та інфорграфіку у векторному редакторі графіки",
     '.choiceContextBlock'
 ).render();
 
@@ -124,10 +152,5 @@ new NominationCard(
     '.choiceContextBlock'
 ).render();
 
-new NominationCard(
-    "./images/3D.jpg",
-    "3D",
-    "Тривимірна графіка",
-    "Створюй чарівні світи з редактором тривимірної графіки",
-    '.choiceContextBlock'
-).render();
+
+

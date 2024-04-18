@@ -52,17 +52,20 @@
     <!-- Modal -->
     <div class="modal">
         <div class="modalDialog">
-            <div class = "btnCloseModal" data-close>x</div>
-            <h3>Вхід</h3>
-            <span>
-                Логін                
-            </span>
-            <input type="text" value="">
-            <span>
-                Пароль                
-            </span>
-            <input type="password" value="">
-            <button class = "btnLoginModal">Увійти</button>
+            <form action = "#">
+                <div class = "btnCloseModal" data-close>x</div>
+                <h3>Вхід</h3>
+                <span>
+                    Логін                
+                </span>
+                <input required placeholder="Введіть ваш логін" name = "name" value="">
+                <span>
+                    Пароль                
+                </span>
+                <input type="password" required placeholder="Введіть ваш пароль" name = "password" value="">
+                <button class = "btnLoginModal">Увійти</button>
+            </form>
+            
         </div>
     </div>
 

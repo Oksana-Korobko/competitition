@@ -6,8 +6,8 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  background-color: azure;
-  color:black;
+  background-color: #f3f3f6;
+  color: black;
 }
 /* .roboto-regular {
   font-family: "Roboto", sans-serif;
@@ -17,8 +17,8 @@ body {
 /* Header */
 .headerBlock {
   height: 70px;
-  background-color: #87C159;
-  color: #393b3f;
+  background-color: #e3dcd5;
+  color: #da7015;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,31 +40,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 550px;
-  height: 200px;
-  border: 1px solid gray;
+  width: 350px;
+  height: 100px;
+  border: none;
   border-radius: 10px;
-  background: #F3C301;
-  
+  background: #bedce3;
 }
 .timerBlock {
-  margin: 20px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 85px;
-  height: 150px;
-  border: 1px solid gray;
+  height: 85px;
+  border: none;
   border-radius: 10px;
-  font-size: 24px;
-  background-color: azure;
+  font-size: 16px;
+  background-color: #f3f3f6;
 }
 #days,
 #hours,
 #minutes,
 #secondes {
-  font-size: 64px;
+  font-size: 36px;
+  color: #6cb4b8;
 }
 
 /* Modal */
@@ -82,7 +82,7 @@ body {
   display: none;
 }
 .modalDialog {
-  background-color: azure;
+  background-color: #f3f3f6;
   width: 300px;
   height: 400px;
   display: flex;
@@ -131,5 +131,26 @@ input {
 
 /* CARDS */
 .choiceContextBlock {
-  background-color: #ADCACB;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
 }
+.choiceItem {
+  width: 300px;
+  background-color: #e3dcd5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.choiceItem > img {
+  margin-bottom: 20px;
+}
+.choiceItem-subtitle {
+  color: #da7015;
+  font-size: 24px;
+}
+/* .choiceItem-description {
+} */
