@@ -5,6 +5,10 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+body {
+  background-color: azure;
+  color:black;
+}
 /* .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -13,8 +17,8 @@
 /* Header */
 .headerBlock {
   height: 70px;
-  background-color: rgb(90, 6, 192);
-  color: azure;
+  background-color: #87C159;
+  color: #393b3f;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,12 +44,8 @@
   height: 200px;
   border: 1px solid gray;
   border-radius: 10px;
-  background: rgb(90, 6, 192);
-  background: linear-gradient(
-    45deg,
-    rgba(90, 6, 192, 1) 0%,
-    rgba(130, 47, 230, 1) 73%
-  );
+  background: #F3C301;
+  
 }
 .timerBlock {
   margin: 20px;
@@ -127,4 +127,9 @@ input {
 }
 .hide {
   display: none;
+}
+
+/* CARDS */
+.choiceContextBlock {
+  background-color: #ADCACB;
 }
