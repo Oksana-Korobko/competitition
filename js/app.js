@@ -3,7 +3,9 @@ const start = "2024-06-10",
     btnCloseModal = document.querySelector('[data-close]'),
     modal = document.querySelector('.modal'),
     modalDialog = document.querySelector('.modalDialog'),
-    modalReg = document.querySelector('.modalReg');
+    modalReg = document.querySelector('.modalReg'),
+    reg = document.querySelector('.reg'),
+    btnLoginModal = document.querySelector('.btnLoginModal');
 
 
 // LOGIN
@@ -12,7 +14,7 @@ btnLogin.addEventListener('click', () => {
     modal.classList.add('show');
     modal.classList.remove('hide');
     modalDialog.classList.add('show');
-    modalReg.classList.remove('hide');
+    modalReg.classList.add('hide');
     document.body.style.overflow = 'hidden'
 })
 
@@ -23,6 +25,7 @@ function closeModal() {
 }
 
 btnCloseModal.addEventListener('click', closeModal);
+
 modal.addEventListener('click', (e) =>{
     if (e.target===modal){
         closeModal();
@@ -33,6 +36,14 @@ document.addEventListener('keydown',(e) => {
         closeModal()
     }
 })
+
+reg.addEventListener('click', (e) => {
+    modalDialog.classList.add('hide');
+    modalDialog.classList.remove('show');
+    modalReg.classList.add('show');
+    modalReg.classList.remove('hide');
+    
+});
 
 const forms = document.querySelectorAll('form');
 const message = {
