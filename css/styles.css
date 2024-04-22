@@ -24,7 +24,7 @@ body {
   align-items: center;
 }
 .logo,
-.user {
+.btnLogin {
   margin: 5px;
   cursor: pointer;
 }
