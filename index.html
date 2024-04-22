@@ -47,6 +47,7 @@
             секунд
         </div>
     </div>
+    <div class="actionHeader">Для голосування чи участі у конкурсі <span>увійдіть</span> в свій акаунт</div>
 
 
     <!-- Modal -->
@@ -64,8 +65,29 @@
                 </span>
                 <input type="password" required placeholder="Введіть ваш пароль" name = "password" value="">
                 <button class = "btnLoginModal" data-modal>Увійти</button>
+                <div class="reg">Зареєструватись</div>
             </form>
             
+        </div>
+        <div class="modalReg">
+            <form action = "#">
+                <div class = "btnCloseModal" data-close>x</div>
+                <h3>Реєстрація</h3>
+                <span>
+                    Логін                
+                </span>
+                <input required placeholder="Введіть ваш логін" name = "name" value="">
+                <span>
+                    Пароль                
+                </span>
+                <input type="password" required placeholder="Введіть ваш пароль" name = "password" value="">
+                <span>
+                    Повторіть пароль                
+                </span>
+                <input type="password" required placeholder="Введіть ваш пароль ще раз" name = "password" value="">
+                <button class = "btnLoginModal" data-modal>Увійти</button>
+                <div class="reg">Маю акаунт, увійти</div>
+            </form>
         </div>
     </div>
 
@@ -73,6 +95,9 @@
     <div class="choiceContextBlock">
         
     </div>
+    <footer>
+        Чернігівський колегіум № 11, 2024
+    </footer>
 
 
     <script src="./js/app.js"></script>

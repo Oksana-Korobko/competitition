@@ -1,12 +1,18 @@
 const start = "2024-06-10",
     btnLogin = document.querySelector('[data-modal]'),
     btnCloseModal = document.querySelector('[data-close]'),
-    modal = document.querySelector('.modal');
+    modal = document.querySelector('.modal'),
+    modalDialog = document.querySelector('.modalDialog'),
+    modalReg = document.querySelector('.modalReg');
+
 
 // LOGIN
+
 btnLogin.addEventListener('click', () => {
     modal.classList.add('show');
     modal.classList.remove('hide');
+    modalDialog.classList.add('show');
+    modalReg.classList.remove('hide');
     document.body.style.overflow = 'hidden'
 })
 
