@@ -10,13 +10,15 @@ const start = "2024-06-10",
 
 // LOGIN
 
-btnLogin.addEventListener('click', () => {
+function openModal(){
     modal.classList.add('show');
     modal.classList.remove('hide');
     modalDialog.classList.add('show');
     modalReg.classList.add('hide');
     document.body.style.overflow = 'hidden'
-})
+}
+
+btnLogin.addEventListener('click', openModal)
 
 function closeModal() {
     modal.classList.add('hide');
@@ -47,8 +49,8 @@ reg.addEventListener('click', (e) => {
 
 const forms = document.querySelectorAll('form');
 const message = {
-    loading: "Завантажую",
-    success: "Ласкаво просимо",
+    loading: "Хвилиночку...",
+    success: "Ласкаво просимо до нашої галереї",
     failure: "Щось пішло не так..."
 }
 
@@ -91,13 +93,23 @@ function postData(form){
                 statusMessage.textContent = message.failure;
             }
         })
-
-
-
-
-
     })
 }
+
+function showGreeting(){
+    const prevModalDialog = document.querySelector('.modalDialog');
+    prevModalDialog.classList.add('hide');
+    openModal();
+
+    const greetingModal = document.createElement('div');
+    greetingModal.classList.add('modalDialog');
+    greetingModal.innerHTML = `
+        <div class = 'modalDialog'>
+            <h3>
+        </div>
+    `
+}
+
 
 // TIMER
 function getTimer(endTimer){
